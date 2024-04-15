@@ -3,7 +3,7 @@ FROM debian:latest
 
 # Update package lists and install dependencies
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+    apt-get install -y \
     texlive-full \
     inkscape && \
     rm -rf /var/lib/apt/lists/*
